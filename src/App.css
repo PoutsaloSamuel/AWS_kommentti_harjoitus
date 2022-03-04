@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --color-blue: hsl(238, 40%, 52%);
+  --color-grey: hsl(228, 33%, 97%);
+  --color-font-grey: hsl(211, 10%, 45%);
+  --color-side-grey: hsl(223, 19%, 93%);
+  --color-white: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-grey);
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  padding: 0 0.4rem;
+  color: var(--color-font-grey);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pfp {
+  padding: 1rem 0.4rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.pfp-reply {
+  padding: 1rem 0.4rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.replyButton {
+  color: var(--color-blue);
+  font-weight: bold;
+}
+
+.comment {
+  background-color: var(--color-white);
+  margin: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.postTime {
+}
+
+.content {
+}
+
+.icon-name-time {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.scores-and-reply {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scoreContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--color-grey);
+  width: 6rem;
+  margin: 0;
+  padding: 0 0.6rem;
+  border-radius: 1rem;
 }
+
+.theScore {
+  width: 1rem;
+  border: none;
+  background-color: var(--color-grey);
+  color: var(--color-font-grey);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.plusScore {
+  width: 1rem;
+}
+
+.minusScore {
+  width: 1rem;
+}
+
+.score {
+  background-color: var(--color-grey);
+  color: var(--color-blue);
+  font-weight: bold;
+}
+
+.comment-reply {
+  position: relative;
+  background-color: var(--color-white);
+  margin: 1rem;
+  margin-left: 3rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.comment-reply::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  width: 3px;
+  left: 0;
+  height: 100%;
+  color: var(--color-side-grey);
+  background-color: var(--color-side-grey);
+}
+
+.name-reply {
+  font-weight: bold;
+}
+
+.postTime-reply {
+}
+
+.content-reply {
+}
+
+.score-reply {
+  padding: 0.7rem 1.7rem;
+  background-color: hsl(228, 33%, 97%);
+  width: 1.8rem;
+  border-radius: 0.6rem;
+  color: hsl(238, 40%, 52%);
+  font-weight: bold;
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Moderate blue: hsl(238, 40%, 52%)
+- Soft Red: hsl(358, 79%, 66%)
+- Light grayish blue: hsl(239, 57%, 85%)
+- Pale red: hsl(357, 100%, 86%)
+
+### Neutral
+
+- Dark blue: hsl(212, 24%, 26%)
+- Grayish Blue: hsl(211, 10%, 45%)
+- Light gray: hsl(223, 19%, 93%)
+- Very light gray: hsl(228, 33%, 97%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500, 700
+ */
