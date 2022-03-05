@@ -8,7 +8,7 @@ function App({ signOut, user }) {
   return (
     <div className="App">
       <header>
-        <h1>Hello {user.username}</h1>
+        <h1>Hey {user.username}</h1>
         <button onClick={signOut}>Sign out</button>
       </header>
       <Content />
